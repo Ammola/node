@@ -14,6 +14,7 @@ namespace node {
 
 // It's a bit awkward to define this Buffer::New() overload here, but it
 // avoids a circular dependency with node_internals.h.
+// No problem :) 
 namespace Buffer {
 v8::MaybeLocal<v8::Uint8Array> New(Environment* env,
                                    v8::Local<v8::ArrayBuffer> ab,
